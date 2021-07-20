@@ -1,6 +1,13 @@
 import React from 'react'
 import './App.css'
 
+
+
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
+
+import TabelaProdutos from './components/repeticao/TabelaProdutos'
+import ListaAlunos from './components/repeticao/ListaAlunos'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 import Card from './components/layout/Card'
@@ -14,12 +21,28 @@ export default function App(props) {
         <div className="App">
             <h2>Fundamentos React</h2>
             <div className="Cards">
+
+                <Card titulo="#08 - Rendereização Condicional" color="#982395">
+                    <ParOuImpar numero={21}></ParOuImpar>
+                    <UsuarioInfo usuario={{nome: 'Fernando'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{email: 'tse@email.com'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{}}></UsuarioInfo>
+                </Card>
+
+                <Card titulo="#07 - Desafio tabela">
+                    <TabelaProdutos></TabelaProdutos>
+                </Card>
+
+                <Card titulo="#06 - Listas de Repetição" color="#476c8a ">
+                    <ListaAlunos></ListaAlunos>
+                </Card>
+
                 <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
                     <Familia sobrenome="Silva">
-                        <FamiliaMembro nome="Antonio"/>
-                        <FamiliaMembro nome="Maria"/>
-                        <FamiliaMembro nome="Lia"/>
-                        <FamiliaMembro nome="Max"/>
+                        <FamiliaMembro nome="Antonio" />
+                        <FamiliaMembro nome="Maria" />
+                        <FamiliaMembro nome="Lia" />
+                        <FamiliaMembro nome="Max" />
                     </Familia>
                 </Card>
 
