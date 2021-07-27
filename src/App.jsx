@@ -3,6 +3,10 @@ import './App.css'
 
 
 
+import Input from './components/formulario/Input'
+
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import DiretaPai from './components/comunicacao/DiretaPai'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 
@@ -21,11 +25,21 @@ export default function App(props) {
         <div className="App">
             <h2>Fundamentos React</h2>
             <div className="Cards">
+                <Card titulo="#11 - Componente Controlado (input)" color="#E45F56">
+                    <Input></Input>
+                </Card>
+
+                <Card titulo="#10 - Comunicação Indireta" color="#59323C">
+                    <IndiretaPai></IndiretaPai>
+                </Card>
+                <Card titulo="#09 - Comunicação Direta" color="#59323C">
+                    <DiretaPai></DiretaPai>
+                </Card>
 
                 <Card titulo="#08 - Rendereização Condicional" color="#982395">
                     <ParOuImpar numero={21}></ParOuImpar>
-                    <UsuarioInfo usuario={{nome: 'Fernando'}}></UsuarioInfo>
-                    <UsuarioInfo usuario={{email: 'tse@email.com'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{ nome: 'Fernando' }}></UsuarioInfo>
+                    <UsuarioInfo usuario={{ email: 'tse@email.com' }}></UsuarioInfo>
                     <UsuarioInfo usuario={{}}></UsuarioInfo>
                 </Card>
 
