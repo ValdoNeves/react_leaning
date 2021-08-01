@@ -27,7 +27,7 @@ export default function App(props) {
             <div className="Cards">
 
                 <Card titulo="#12 - Contador" color="#424242">
-                    <Contador numeroInicial={10}></Contador>
+                    <Contador numeroInicial={0}></Contador>
                 </Card>
                 <Card titulo="#11 - Componente Controlado (input)" color="#E45F56">
                     <Input></Input>
